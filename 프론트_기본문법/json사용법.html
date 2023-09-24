@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON 예시</title>
+    <script>
+        // JSON(JavaScript Object Notation)은 경량 데이터 교환 형식입니다.
+        // JSON은 "이름-값" 쌍(또는 "키-값" 쌍)으로 데이터를 구조화합니다.
+        // 주의할 점: JSON의 속성 이름은 반드시 문자열로 되어야 하며 큰따옴표("")로 묶여야 합니다.
+
+        let jsonData = {};  // 빈 JSON 객체 생성
+
+        function saveToJSON() {
+            const name = document.getElementById('name').value;
+            const phoneNumber = document.getElementById('phoneNumber').value;
+
+            jsonData = {
+                "name": name,
+                "phoneNumber": phoneNumber
+            };
+
+            alert('JSON에 저장되었습니다.');
+        }
+
+        function displayJSON() {
+            const jsonString = JSON.stringify(jsonData, null, 2); // JSON 객체를 보기 좋게 문자열로 변환
+            document.getElementById('jsonOutput').textContent = jsonString;
+        }
+    </script>
+</head>
+<body>
+    <!-- 화면 구조:
+    [이름 라벨과 입력 필드]
+    [전화번호 라벨과 입력 필드]
+    [JSON에 저장 버튼] [저장된 JSON 출력 버튼]
+    [저장된 JSON의 출력 영역]
+    -->
+    <label for="name">이름: </label>
+    <input type="text" id="name" placeholder="이름을 입력하세요">
+
+    <label for="phoneNumber">전화번호: </label>
+    <input type="text" id="phoneNumber" placeholder="전화번호를 입력하세요">
+
+    <button onclick="saveToJSON()">JSON에 저장</button>
+    <button onclick="displayJSON()">저장된 JSON 출력</button>
+
+    <!-- 여기에는 사용자가 입력한 이름과 전화번호를 JSON 형식의 문자열로 보여줍니다. -->
+    <pre id="jsonOutput"></pre>
+</body>
+</html>

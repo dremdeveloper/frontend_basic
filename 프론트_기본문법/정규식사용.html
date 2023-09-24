@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규식 예시</title>
+    <script>
+        function validateEmail() {
+            const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            const email = document.getElementById('email').value;
+
+            if (regex.test(email)) {
+                alert('유효한 이메일입니다.');
+            } else {
+                alert('유효하지 않은 이메일입니다.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+    [정규식(Regular Expression)에 대한 설명]
+
+    - 정규식은 문자열의 패턴을 정의하는 데 사용됩니다.
+    - 정규식은 "/"로 시작하고 "/"로 끝나며, 플래그를 포함할 수 있습니다. (예: /pattern/gi)
+    
+    [주요 문법]
+    ^ : 문자열의 시작
+    $ : 문자열의 끝
+    [a-zA-Z] : 알파벳 모든 문자
+    [0-9] : 숫자 모든 문자
+    . : 임의의 한 문자
+    + : 직전의 패턴이 한 번 이상 반복됨
+    * : 직전의 패턴이 0번 이상 반복됨
+    {n} : 직전의 패턴이 정확히 n번 반복됨
+    {n,} : 직전의 패턴이 최소 n번 반복됨
+    {n,m} : 직전의 패턴이 n번부터 m번까지 반복됨
+    ? : 직전의 패턴이 0번 또는 1번 나타남
+    | : OR 연산자
+
+    [주의할 점]
+    - 정규식은 복잡하고 강력한 도구이므로 사용하기 전에 잘 이해해야 합니다.
+    - 정규식만으로 완벽한 검증이 불가능할 수 있으므로 다른 방법과 결합해서 사용하는 것이 좋습니다.
+
+    결과:
+    - 사용자가 입력한 이메일 주소가 정규식 패턴과 일치하는지 확인합니다. 일치하면 '유효한 이메일'이라고 알림, 일치하지 않으면 '유효하지 않은 이메일'이라고 알림을 표시합니다.
+    -->
+
+    <input type="text" id="email" placeholder="이메일 주소 입력">
+    <button onclick="validateEmail()">검증하기</button>
+</body>
+</html>

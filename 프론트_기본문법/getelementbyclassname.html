@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName 예시</title>
+    <script>
+        // DOM이 완전히 로드된 후 실행될 함수
+        window.onload = function() {
+            // "highlight" 클래스를 가진 모든 요소에 접근하기
+            var highlightedElements = document.getElementsByClassName('highlight');
+
+            // 해당 요소들의 텍스트를 변경하기
+            for(var i = 0; i < highlightedElements.length; i++) {
+                highlightedElements[i].textContent += " (highlight 클래스를 가짐)";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+    [document.getElementsByClassName에 대한 설명]
+
+    - getElementsByClassName는 Document 객체의 메서드입니다.
+    - 이 메서드는 주어진 문자열과 일치하는 클래스 속성을 가진 모든 요소를 HTMLCollection으로 반환합니다.
+    - HTMLCollection은 배열과 유사한 구조이지만, 일반 배열 메서드를 사용할 수 없습니다. 
+    - 이 메서드가 반환하는 HTMLCollection은 '실시간'이기 때문에 원본 DOM에 변화가 생기면 반환된 컬렉션도 그 변화를 반영합니다. (주의 필요)
+
+    결과: 웹 페이지가 로드되면, "highlight" 클래스를 가진 모든 텍스트는 뒤에 " (highlight 클래스를 가짐)"가 추가됩니다.
+    
+    [주의할 점]
+    - getElementsByClassName은 NodeList가 아니라 HTMLCollection을 반환합니다.
+    - 원본 DOM이 변경되면 HTMLCollection도 그 변화를 반영하므로, DOM을 수정하는 반복 작업 중에는 혼란이 생길 수 있습니다. 
+    -->
+
+    <p class="highlight">이것은 첫 번째 예제 텍스트입니다.</p>
+    <p class="highlight">이것은 두 번째 예제 텍스트입니다.</p>
+    <p>이것은 클래스가 없는 텍스트입니다.</p>
+</body>
+</html>

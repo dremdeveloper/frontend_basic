@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById 예시</title>
+    <script>
+        // DOM이 완전히 로드된 후 실행될 함수
+        window.onload = function() {
+            // "myText" ID를 가진 요소에 접근하기
+            var textElement = document.getElementById('myText');
+
+            // 해당 요소의 텍스트를 변경하기
+            textElement.textContent = "getElementById를 통해 변경된 텍스트입니다!";
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+    [document.getElementById에 대한 설명]
+
+    - getElementById는 Document 객체의 메서드입니다.
+    - 이 메서드는 주어진 문자열과 일치하는 ID 속성을 가진 첫 번째 요소를 반환합니다.
+    - 반환된 요소는 Element 객체로, 이 객체를 통해 해당 요소의 속성이나 내용 등을 변경할 수 있습니다.
+    - 만약 일치하는 ID를 가진 요소가 없으면 null을 반환합니다.
+    
+    결과: 웹 페이지가 로드되면, "이것은 예제 텍스트입니다."가 "getElementById를 통해 변경된 텍스트입니다!"로 변경됩니다.
+    -->
+
+    <p id="myText">이것은 예제 텍스트입니다.</p>
+</body>
+</html>

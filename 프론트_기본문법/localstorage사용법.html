@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage 예시</title>
+    <script>
+        // localStorage는 웹 브라우저 내에서 키와 값을 저장하는 저장소입니다.
+        // 주의점:
+        // 1. localStorage에 저장되는 모든 데이터는 문자열로 저장됩니다.
+        // 2. 도메인 별로 localStorage 영역이 분리되어 있습니다.
+        // 3. 만료 날짜가 없으므로 데이터는 브라우저를 닫거나 컴퓨터를 재시작해도 사라지지 않습니다.
+        // 4. 보안상 중요한 정보는 localStorage에 저장하지 않는 것이 좋습니다.
+
+        function saveToLocalStorage() {
+            const name = document.getElementById('name').value;
+            const phoneNumber = document.getElementById('phoneNumber').value;
+
+            const jsonData = {
+                "name": name,
+                "phoneNumber": phoneNumber
+            };
+
+            localStorage.setItem('userInfo', JSON.stringify(jsonData));
+            alert('localStorage에 저장되었습니다.');
+        }
+
+        function displayFromLocalStorage() {
+            const storedData = localStorage.getItem('userInfo');
+            const parsedData = JSON.parse(storedData);
+            
+            if (parsedData) {
+                document.getElementById('output').textContent = `이름: ${parsedData.name}, 전화번호: ${parsedData.phoneNumber}`;
+            } else {
+                alert('저장된 데이터가 없습니다.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 화면 구조:
+    [이름 라벨과 입력 필드]
+    [전화번호 라벨과 입력 필드]
+    [localStorage에 저장 버튼] [저장된 데이터 출력 버튼]
+    [저장된 데이터의 출력 영역]
+    -->
+
+    <label for="name">이름: </label>
+    <input type="text" id="name" placeholder="이름을 입력하세요">
+
+    <label for="phoneNumber">전화번호: </label>
+    <input type="text" id="phoneNumber" placeholder="전화번호를 입력하세요">
+
+    <button onclick="saveToLocalStorage()">localStorage에 저장</button>
+    <button onclick="displayFromLocalStorage()">저장된 데이터 출력</button>
+
+    <!-- 여기에는 사용자가 입력한 이름과 전화번호를 출력합니다. -->
+    <div id="output"></div>
+</body>
+</html>

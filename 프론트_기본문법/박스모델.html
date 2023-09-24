@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id와 class 예시</title>
+    <style>
+        /* class 선택자 */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* id 선택자 */
+        #special-text {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="highlight">이 텍스트는 'highlight' 클래스를 사용하여 배경색이 노란색으로 표시됩니다.</p>
+    <p>이 텍스트는 클래스나 id가 없습니다.</p>
+    <p id="special-text">이 텍스트는 'special-text' id를 사용하여 굵게 표시되며 빨간색으로 색칠됩니다.</p>
+    <p class="highlight">클래스는 여러 요소에 동일한 스타일을 적용할 때 사용됩니다.</p>
+</body>
+</html>
+<!-- 
+---------------------------------------------------
+|                                                 | <- 30px의 margin (점선으로 표현된 부분)
+|   -----------------------------------------     |
+|   |    Border (10px 주황색으로 표시됨)     |     |
+|   |   ---------------------------------   |     |
+|   |   |  Padding (20px 민트색으로 표시됨)| |     |
+|   |   |   -------------------------   |   |     |
+|   |   |   |                       |   |   |     |
+|   |   |   |      Content (회색)    |   |   |     |
+|   |   |   |                       |   |   |     |
+|   |   |   -------------------------   |   |     |
+|   |   ---------------------------------   |     |
+|   -----------------------------------------     |
+---------------------------------------------------
+-->
+

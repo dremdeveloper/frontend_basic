@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display 속성 예시</title>
+    <style>
+        /* block 요소 예시 */
+        .block-element {
+            display: block;
+            background-color: lightblue;
+        }
+
+        /* inline 요소 예시 */
+        .inline-element {
+            display: inline;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    [DISPLAY 속성과 BLOCK vs INLINE 개념]
+    - DISPLAY: 요소의 렌더링 박스 유형을 결정하는 CSS 속성.
+    
+    - BLOCK: 
+      1. 블록 레벨 요소는 새로운 라인에서 시작됩니다.
+      2. 부모 요소의 전체 너비를 기본으로 차지합니다.
+      3. 주로 레이아웃 및 구조를 구성하는 데 사용됩니다.
+
+    - INLINE:
+      1. 인라인 레벨 요소는 새로운 라인에서 시작되지 않습니다.
+      2. 내용의 너비만큼만 차지합니다.
+      3. 텍스트나 다른 인라인 요소와 함께 한 줄에 배치됩니다.
+    -->
+
+    <div class="block-element">이 요소는 block 레벨 요소입니다.</div> <!-- 결과: 전체 너비를 차지하며 새로운 라인에서 시작됩니다. -->
+
+    <span class="inline-element">이 요소는</span> <!-- 결과: 텍스트 내용의 너비만큼 차지하며 새로운 라인에서 시작되지 않습니다. -->
+    <span class="inline-element">inline 레벨 요소입니다.</span> <!-- 결과: 이전 인라인 요소의 옆에 연속해서 위치합니다. -->
+
+    <div class="block-element">블록 요소는 항상 새로운 라인에서 시작됩니다.</div> <!-- 결과: 전체 너비를 차지하며 새로운 라인에서 시작됩니다. -->
+</body>
+</html>

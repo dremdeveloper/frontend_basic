@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer 예시</title>
+    <script>
+        let counter = 0;
+
+        function updateText() {
+            const display = document.getElementById('display');
+            counter++;
+            display.textContent = '타이머가 ' + counter + '번 실행되었습니다.';
+
+            // 타이머를 일정 횟수 이후에 멈추기
+            if (counter >= 5) {
+                clearInterval(timer);
+            }
+        }
+
+        // setInterval: 일정한 간격으로 함수를 반복 실행
+        let timer = setInterval(updateText, 1000); // 1초 간격으로 updateText 함수 실행
+
+        function stopTimer() {
+            clearInterval(timer);
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+    [Timer에 대한 설명]
+
+    - JavaScript에서 타이머는 주로 `setInterval`과 `setTimeout`을 사용하여 구현됩니다.
+    - `setInterval`: 지정된 함수를 일정한 시간 간격으로 반복 실행합니다.
+    - `setTimeout`: 지정된 함수를 일정한 시간 후에 한 번만 실행합니다.
+    - `clearInterval`와 `clearTimeout`: 이미 설정된 `setInterval` 및 `setTimeout`을 중단합니다.
+
+    결과:
+    - 웹 페이지가 로드되면, 매초마다 텍스트가 업데이트됩니다.
+    - 타이머가 5번 실행된 후에는 자동으로 멈춥니다.
+
+    [주의할 점]
+    - `setInterval`은 지정된 시간 간격으로 계속 실행되기 때문에 사용에 주의해야 합니다. 필요 없는 시점에서는 `clearInterval`을 사용하여 중단해야 메모리 누수를 방지할 수 있습니다.
+    - `setTimeout` 또한 실행 후 필요없는 경우 `clearTimeout`을 사용하여 중단해야 합니다.
+    -->
+
+    <p id="display">타이머 실행 대기중...</p>
+    <button onclick="stopTimer()">타이머 멈추기</button>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node 메서드 예시</title>
+    <script>
+        window.onload = function() {
+            var container = document.getElementById('nodeContainer');
+            
+            // createElement: 새로운 요소 노드 생성하기
+            var newElement = document.createElement('div');
+            newElement.textContent = '새로운 요소 노드입니다.';
+            container.appendChild(newElement);
+
+            // createTextNode: 새로운 텍스트 노드 생성하기
+            var newText = document.createTextNode(' 이것은 새로운 텍스트 노드입니다.');
+            container.appendChild(newText);
+
+            // removeChild: 노드 제거하기
+            var toRemove = document.getElementById('removeMe');
+            container.removeChild(toRemove);
+
+            // replaceChild: 노드 교체하기
+            var toReplace = document.getElementById('replaceMe');
+            var replacementNode = document.createElement('span');
+            replacementNode.textContent = '교체된 노드입니다.';
+            container.replaceChild(replacementNode, toReplace);
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+    [Node 메서드에 대한 설명]
+
+    - createElement: 요소 노드를 생성합니다.
+    - createTextNode: 텍스트 노드를 생성합니다.
+    - appendChild: 자식 노드를 추가합니다.
+    - removeChild: 자식 노드를 제거합니다.
+    - replaceChild: 자식 노드를 다른 노드로 교체합니다.
+
+    결과:
+    - 새로운 div 요소와 텍스트 노드가 추가됩니다.
+    - "제거될 노드"는 페이지에서 제거됩니다.
+    - "교체될 노드"는 "교체된 노드"로 교체됩니다.
+
+    [주의할 점]
+    - removeChild나 replaceChild를 사용할 때 해당 노드가 실제로 존재하는지 확인해야 합니다.
+    - 노드를 다른 위치에 추가하기 전에 이미 DOM에 추가되어 있는지 확인해야 합니다.
+    -->
+
+    <div id="nodeContainer">
+        <p id="removeMe">제거될 노드</p>
+        <p id="replaceMe">교체될 노드</p>
+    </div>
+</body>
+</html>

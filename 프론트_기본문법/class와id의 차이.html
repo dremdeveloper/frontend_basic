@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id와 class 예시</title>
+    
+    <!-- 
+    [ID와 CLASS의 개념 및 차이점]
+    - ID: 문서 내의 고유한 요소를 식별하기 위한 식별자. 한 페이지 내에서 각 ID는 한 번만 사용되어야 한다.
+    - CLASS: 여러 요소에 동일한 스타일 또는 동작을 적용하기 위한 선택자. 하나의 요소는 여러 클래스를 가질 수 있다.
+    -->
+    
+    <style>
+        /* class 선택자: 여러 요소에 동일한 스타일을 적용할 때 사용 */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* id 선택자: 페이지 내에서 고유한 스타일이나 동작을 적용할 요소에 사용 */
+        #special-text {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- class를 사용한 요소: 동일한 스타일을 여러 요소에 적용할 때 사용 -->
+    <p class="highlight">이 텍스트는 'highlight' 클래스를 사용하여 배경색이 노란색으로 표시됩니다.</p> <!-- 결과: 노란색 배경의 텍스트 -->
+
+    <!-- id나 class가 없는 요소 -->
+    <p>이 텍스트는 클래스나 id가 없습니다.</p> <!-- 결과: 일반 텍스트 -->
+
+    <!-- id를 사용한 요소: 페이지 내에서 고유한 스타일이나 동작을 적용할 요소에 사용 -->
+    <p id="special-text">이 텍스트는 'special-text' id를 사용하여 굵게 표시되며 빨간색으로 색칠됩니다.</p> <!-- 결과: 굵은 빨간색 텍스트 -->
+
+    <!-- class를 사용한 또 다른 요소 -->
+    <p class="highlight">클래스는 여러 요소에 동일한 스타일을 적용할 때 사용됩니다.</p> <!-- 결과: 노란색 배경의 텍스트 -->
+</body>
+</html>

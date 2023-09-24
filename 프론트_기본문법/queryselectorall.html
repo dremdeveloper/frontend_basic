@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorAll 예시</title>
+    <script>
+        // DOM이 완전히 로드된 후 실행될 함수
+        window.onload = function() {
+            // ".highlight" 선택자에 해당하는 모든 요소에 접근하기
+            var highlightedElements = document.querySelectorAll('.highlight');
+
+            // 해당 요소들의 텍스트를 변경하기
+            highlightedElements.forEach(function(element) {
+                element.textContent = "querySelectorAll로 선택된 텍스트!";
+            });
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+    [document.querySelectorAll에 대한 설명]
+
+    - querySelectorAll는 Document 객체의 메서드입니다.
+    - 이 메서드는 주어진 CSS 선택자와 일치하는 모든 요소를 NodeList로 반환합니다.
+    - 만약 일치하는 요소가 없으면 빈 NodeList를 반환합니다.
+    - querySelectorAll은 복잡한 CSS 선택자도 사용할 수 있어, DOM 요소를 선택하는 데 유연성을 제공합니다.
+    
+    결과: 웹 페이지가 로드되면, "highlight" 클래스를 가진 모든 텍스트가 "querySelectorAll로 선택된 텍스트!"로 변경됩니다.
+
+    [주의할 점]
+    - querySelectorAll이 반환하는 NodeList는 '정적'입니다. DOM의 변화가 NodeList에 반영되지 않습니다.
+    - 성능: 대량의 요소를 선택할 때, 특히 반복적으로 사용할 때는 querySelectorAll의 성능에 주의해야 합니다. 가능한 한 구체적인 선택자를 사용하는 것이 좋습니다.
+    - forEach와 같은 배열 메서드를 사용하기 위해 반환된 NodeList를 배열로 변환할 필요는 없습니다. 최신 브라우저에서는 NodeList도 forEach와 같은 메서드를 지원합니다.
+    -->
+
+    <p class="highlight">이것은 첫 번째 예제 텍스트입니다.</p>
+    <p class="highlight">이것은 두 번째 예제 텍스트입니다.</p>
+    <p>이것은 클래스가 없는 텍스트입니다.</p>
+</body>
+</html>

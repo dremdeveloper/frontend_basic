@@ -1,0 +1,15 @@
+/* 기본 스타일을 정의하여 시계의 디자인과 레이아웃을 설정합니다. */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    margin: 0;
+}
+
+.clock {
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Table</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 사용자 입력을 위한 입력 상자 -->
+        <input type="text" id="newItem" placeholder="새 항목 입력">
+        <!-- 항목을 테이블에 추가하기 위한 버튼. 클릭 시 addItem 함수 실행 -->
+        <button onclick="addItem()">추가</button>
+        <!-- 항목들이 동적으로 추가될 테이블 -->
+        <table id="itemTable">
+            <thead>
+                <tr>
+                    <!-- 테이블 헤더 -->
+                    <th>항목</th>
+                </tr>
+            </thead>
+            <!-- 테이블 본문(내용이 동적으로 추가될 곳) -->
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    <!-- Javascript 파일 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>

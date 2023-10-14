@@ -1,0 +1,14 @@
+/* 기본 스타일링 */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 앱 전체 스타일링 */
+#app {
+    text-align: center;
+}

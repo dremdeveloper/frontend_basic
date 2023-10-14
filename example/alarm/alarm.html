@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm App</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 알람 설정을 위한 시간 입력 필드 -->
+        <input type="time" id="alarmTime" placeholder="Set alarm">
+        <!-- 알람 설정 버튼, setAlarm 함수 실행 -->
+        <button onclick="setAlarm()">알람 설정</button>
+        <p id="message">알람이 설정되지 않았습니다.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

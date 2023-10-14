@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#intro-container {
+    text-align: center;
+}
+
+#profile-pic {
+    width: 150px;
+    border-radius: 75px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+}

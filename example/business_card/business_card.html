@@ -1,0 +1,31 @@
+<!-- 
+HTML 설명:
+1. 사용자는 이름, 전화번호, 주소를 입력할 수 있는 입력 필드를 제공합니다.
+2. '명함 만들기' 버튼을 누르면 JavaScript 함수가 호출되어 명함을 만듭니다.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Business Card Generator</title>
+</head>
+<body>
+    <div class="input-fields">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="phone" placeholder="Phone">
+        <input type="text" id="address" placeholder="Address">
+        <button onclick="generateCard()">명함 만들기</button>
+    </div>
+
+    <div class="business-card" id="card">
+        <h2 id="card-name"></h2>
+        <p id="card-phone"></p>
+        <p id="card-address"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

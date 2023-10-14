@@ -1,0 +1,34 @@
+/* 기본 스타일링 */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 앱 전체 스타일링 */
+#app {
+    text-align: center;
+}
+
+/* 테이블 스타일링 */
+table {
+    margin-top: 20px;
+    width: 300px;
+    border-collapse: collapse;
+}
+
+/* 셀 스타일링 */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* 테이블 헤더 스타일링 */
+th {
+    background-color: #4CAF50;
+    color: white;
+}

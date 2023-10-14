@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Align</title>
+    <style>
+        /* CSS 코드 */
+        .center {
+            text-align: center;  /* 텍스트를 가운데 정렬합니다. */
+        }
+        .right {
+            text-align: right;  /* 텍스트를 오른쪽 정렬합니다. */
+        }
+        .container {
+            display: flex;  /* 컨테이너를 flexbox로 만듭니다. */
+            justify-content: space-between;  /* 항목들을 컨테이너의 양 끝으로 분리합니다. */
+            align-items: center;  /* 항목들을 컨테이너의 세로 중앙에 위치시킵니다. */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="center">Center Aligned Text</h1>
+    <h2 class="right">Right Aligned Text</h2>
+    
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+    <!-- 설명 -->
+    <!--
+        [도식화]
+        1. Center Aligned Text: |        Text        |
+        2. Right Aligned Text:  |               Text|
+        3. Flexbox Container:   |Item 1   Item 2   Item 3|
+        
+        [코드 설명]
+        - text-align: 텍스트의 수평 정렬을 지정합니다.
+        - display: flex; : 컨테이너를 플렉스 컨테이너로 만듭니다.
+        - justify-content: 플렉스 항목들의 수평 정렬을 조절합니다.
+        - align-items: 플렉스 항목들의 수직 정렬을 조절합니다.
+        
+        [CSS 스타일 설명]
+        - .center 클래스는 text-align을 사용해 텍스트를 가운데 정렬합니다.
+        - .right 클래스는 text-align을 사용해 텍스트를 오른쪽 정렬합니다.
+        - .container 클래스는 display, justify-content, align-items를 사용하여
+          내부 항목들을 수평으로 동일한 간격으로 분리하고, 수직으로는 중앙에 위치하게 정렬합니다.
+
+        [실제 동작]
+        - <h1 class="center">: "Center Aligned Text"라는 텍스트를 수평 중앙에 정렬합니다.
+        - <h2 class="right">: "Right Aligned Text"라는 텍스트를 오른쪽으로 정렬합니다.
+        - <div class="container">: "Item 1", "Item 2", "Item 3"라는 세 개의 항목을 가지며, 이 항목들은
+          수평으로 동일한 간격으로 분리되고, 수직으로는 컨테이너 중앙에 정렬됩니다.
+    -->
+</body>
+</html>

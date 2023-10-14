@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Div</title>
+    <style>
+        /* CSS 코드 */
+        /* 외부 div 스타일링: 배경 색을 붉은색으로, 테두리를 검은색으로, 패딩과 마진을 설정 */
+        .outer {
+            background-color: red;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 15px;
+        }
+
+        /* 내부 div 스타일링: 배경 색을 파란색으로, 테두리를 검은색으로, 패딩과 마진을 설정 */
+        .inner {
+            background-color: blue;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* 텍스트 스타일링: 색을 흰색으로, 텍스트 정렬을 가운데로 */
+        p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML 코드 -->
+    <!-- 외부 div: 이 div는 내부 div를 감싸고 있습니다. -->
+    <div class="outer">
+        <!-- 외부 div의 설명 텍스트 -->
+        <p>I am the outer div. My background is red.</p>
+
+        <!-- 내부 div: 이 div는 외부 div 내부에 위치합니다. -->
+        <div class="inner">
+            <!-- 내부 div의 설명 텍스트 -->
+            <p>I am the inner div. My background is blue.</p>
+        </div>
+
+        <!-- 또 다른 내부 div -->
+        <div class="inner">
+            <!-- 이 내부 div의 설명 텍스트 -->
+            <p>I am another inner div. My background is also blue.</p>
+        </div>
+    </div>
+
+    <!-- 설명 -->
+    <!-- 
+        [도식화]
+        - 외부 div(outer): 빨간색 배경으로 표현되며, 그 내부에는 두 개의 파란색 배경의 내부 div(inner)가 포함되어 있습니다.
+        - 내부 div(inner): 파란색 배경을 가지며, 외부 div 내에 위치합니다. 이 예시에서는 내부 div가 두 개 있습니다.
+        
+        전체 구조는 다음과 같습니다.
+        
+        |----------------------------------------------------|
+        | outer div                                          |
+        |  |----------------------------------------------|  |
+        |  | inner div                                    |  |
+        |  |----------------------------------------------|  |
+        |  |----------------------------------------------|  |
+        |  | another inner div                            |  |
+        |  |----------------------------------------------|  |
+        |----------------------------------------------------|
+    -->
+</body>
+</html>

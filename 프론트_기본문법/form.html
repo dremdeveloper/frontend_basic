@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        /* CSS 코드 */
+        form {
+            margin: 50px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="exampleForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+        // Javascript 코드
+        function submitForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            alert('Name: ' + name + '\nEmail: ' + email);
+        }
+    </script>
+
+    <!-- 설명 -->
+    <!--
+        [도식화]
+        1. Form Element: 
+            +-------------------------+
+            | Name:  [______________] |
+            | Email: [______________] |
+            |        [   Submit   ]   |
+            +-------------------------+
+        
+        [코드 설명]
+        - HTML <form> 태그는 사용자의 입력을 수집하는 데 사용됩니다.
+        - <label> 태그는 폼 요소에 레이블을 제공합니다.
+        - <input> 태그는 사용자 입력 필드를 생성합니다. type 속성을 사용하여 입력 유형(텍스트, 이메일 등)을 정의합니다.
+        - <button> 태그는 폼 제출 버튼을 생성합니다. onclick 속성을 사용하여 버튼 클릭시 실행할 JavaScript 함수를 정의합니다.
+        
+        [CSS 스타일 설명]
+        - form은 페이지의 중앙에 위치하도록 여백이 주어집니다.
+        - label은 디스플레이 속성이 블록으로 설정되고, 하단에 여백이 주어져서 입력 필드 위에 표시됩니다.
+        - button은 상단에 여백이 주어져서 이전 입력 필드와 약간 떨어져 있습니다.
+
+        [Javascript 동작 설명]
+        - submitForm 함수는 form에 입력된 이름과 이메일 값을 가져와서 경고창으로 표시합니다.
+
+        [실제 동작]
+        - 사용자가 "Name"과 "Email" 필드에 정보를 입력하고 "Submit" 버튼을 클릭하면, 입력된 정보가 경고창으로 표시됩니다.
+    -->
+</body>
+</html>

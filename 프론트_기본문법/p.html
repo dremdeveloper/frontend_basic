@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Example</title>
+    <style>
+        /* CSS 코드 */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        p {
+            font-size: 16px;
+            color: blue;
+            text-align: center;
+        }
+        p:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="paragraph">Click me to change the text!</p>
+    
+    <script>
+        // Javascript 코드
+        document.getElementById('paragraph').addEventListener('click', function() {
+            this.textContent = 'Text has been changed!';
+        });
+    </script>
+
+    <!-- 설명 -->
+    <!--
+        [도식화]
+        +-----------------------------------+
+        |      Click me to change the text! |
+        +-----------------------------------+
+        
+        [코드 설명]
+        - HTML <p> 태그는 단락을 정의합니다.
+        - Javascript는 단락의 텍스트를 변경하는 이벤트 리스너를 추가합니다.
+        
+        [CSS 스타일 설명]
+        - body는 화면의 중앙에 내용을 위치시키기 위해 flexbox 레이아웃을 사용합니다.
+        - p는 글자 크기, 색상, 그리고 텍스트 정렬 방식을 정의하며, 호버 상태에서 색상이 변경됩니다.
+
+        [텍스트 동작 설명]
+        - 기본적으로 <p> 태그는 웹 페이지에서 단락을 생성합니다.
+        - 여기에 CSS 스타일을 적용하여 텍스트의 모양을 변경할 수 있습니다.
+        - Javascript를 사용하여 <p> 태그가 클릭되었을 때 동작을 제어합니다.
+
+        [실제 동작]
+        - 웹 페이지에 파란색의 "Click me to change the text!"라는 텍스트가 표시됩니다.
+        - 이 텍스트를 클릭하면, JavaScript의 이벤트 리스너가 동작하여 텍스트가 "Text has been changed!"로 변경됩니다.
+        - 또한, 마우스를 텍스트 위로 가져가면 (호버하면) 텍스트 색상이 빨간색으로 변경됩니다.
+    -->
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding TR and TD</title>
+    <style>
+        /* CSS 코드 */
+        /* 표의 각 부분을 다르게 스타일링하여 명확하게 구분할 수 있도록 합니다. */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML 코드 -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <!-- 설명 -->
+    <!-- 
+        [도식화]
+        <table>
+        | Name | Age |
+        |------|-----|
+        | John | 30  |
+        | Jane | 25  |
+        
+        [코드 설명]
+        - <table>: 표를 생성합니다.
+        - <tr>: table row의 약자로, 표의 한 줄(행)을 정의합니다.
+        - <th>: table header의 약자로, 표의 헤더 셀을 정의합니다. 기본적으로 굵게 표시됩니다.
+        - <td>: table data의 약자로, 표의 데이터 셀을 정의합니다.
+
+        [CSS 스타일 설명]
+        - border-collapse: collapse; -> 테이블의 경계선을 겹치게 하여 하나의 선으로 표시합니다.
+        - width: 50%; -> 테이블의 너비를 부모 요소의 50%로 설정합니다.
+        - border: 1px solid black; -> 셀의 경계선을 1px 너비의 검은색 실선으로 설정합니다.
+        - padding: 10px; -> 셀의 내부 여백을 10px로 설정합니다.
+        - text-align: left; -> 텍스트를 셀의 왼쪽으로 정렬합니다.
+        - background-color: #f2f2f2; -> 헤더 셀의 배경색을 설정합니다.
+
+        [실제 동작]
+        - 표는 2개의 행과 2개의 열로 구성되어 있습니다.
+        - 첫 번째 행은 헤더 셀(<th>)로 구성되어 있으며, "Name"과 "Age"를 제목으로 가집니다.
+        - 두 번째 및 세 번째 행은 데이터 셀(<td>)로 구성되어 있으며, 각각 "John" & "30", "Jane" & "25"를 데이터로 가집니다.
+
+        이 구조는 HTML 표의 기본적인 구조를 가지며, <tr>를 사용하여 새로운 행을, <td>나 <th>를 사용하여 새로운 열을 추가할 수 있습니다.
+    -->
+</body>
+</html>

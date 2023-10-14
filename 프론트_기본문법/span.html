@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Span</title>
+    <style>
+        /* CSS 코드 */
+        /* 기본 텍스트 스타일링: 색을 검은색으로, 텍스트 정렬을 가운데로 */
+        p {
+            color: black;
+            text-align: center;
+        }
+        /* highlighted 스팬 스타일링: 배경 색을 노란색으로, 글자 색을 파란색으로 */
+        .highlighted {
+            background-color: yellow;
+            color: blue;
+        }
+        /* emphasized 스팬 스타일링: 글자를 이탤릭체로 */
+        .emphasized {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML 코드 -->
+    <p>
+        This is an example sentence with 
+        <span class="highlighted">highlighted</span> and 
+        <span class="emphasized">emphasized</span> spans.
+    </p>
+
+    <!-- 설명 -->
+    <!-- 
+        [도식화]
+        - HTML의 <span> 태그는 인라인 요소로, 주로 문장 속 특정 텍스트를 스타일링하기 위해 사용됩니다.
+        - 위 예시의 HTML 코드는 하나의 문장 안에 두 개의 <span> 태그를 사용하여 "highlighted"와 "emphasized"라는 단어들을 각각 다르게 스타일링하고 있습니다.
+
+        |--------------------------------------------------------------------|
+        | This is an example sentence with [highlighted] and [emphasized]    |
+        | spans.                                                             |
+        |--------------------------------------------------------------------|
+        [] 안의 단어들이 각각 <span>으로 스타일링되어 있습니다.
+        
+        - "highlighted": 배경이 노란색이고 글자 색이 파란색입니다.
+        - "emphasized": 글자가 이탤릭체로 표현됩니다.
+
+        따라서 <span>은 텍스트 중 일부분만 다르게 스타일링하고자 할 때 유용한 태그입니다.
+    -->
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Box Example</title>
+    <style>
+        /* CSS 스타일링 */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        label {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 라디오 박스 그룹 -->
+    <div id="radioGroup">
+        <label>
+            <input type="radio" name="fruit" value="apple" onchange="handleChange()"> Apple
+        </label>
+        <label>
+            <input type="radio" name="fruit" value="banana" onchange="handleChange()"> Banana
+        </label>
+        <label>
+            <input type="radio" name="fruit" value="cherry" onchange="handleChange()"> Cherry
+        </label>
+    </div>
+    
+    <p id="selectedItem">Selected item will be shown here.</p>
+    
+    <script>
+        // Javascript 함수
+        function handleChange() {
+            var radioGroup = document.getElementsByName('fruit');
+            var selectedItem = document.getElementById('selectedItem');
+            
+            for(var i = 0; i < radioGroup.length; i++) {
+                if(radioGroup[i].checked) {
+                    selectedItem.textContent = 'Selected item: ' + radioGroup[i].value;
+                    break;
+                }
+            }
+        }
+    </script>
+
+    <!-- 설명 -->
+    <!--
+        [도식화]
+        +----------------------------------------------+
+        | ( ) Apple   ( ) Banana   ( ) Cherry          |
+        | Selected item: [                           ] |
+        +----------------------------------------------+
+
+        [코드 설명]
+        - HTML <input type="radio"> 태그는 라디오 박스를 생성합니다.
+        - 라디오 버튼들이 같은 이름("fruit")을 가지면, 그룹이 형성되어 한 번에 하나만 선택할 수 있습니다.
+        - CSS로 라디오 박스 및 레이블의 스타일을 설정합니다.
+        - Javascript 함수 handleChange()는 라디오 박스의 선택이 변경될 때마다 호출되어, 선택된 항목을 화면에 표시합니다.
+        
+        [CSS 스타일 설명]
+        - body는 화면의 중앙에 내용을 위치시키기 위해 flexbox 레이아웃을 사용합니다.
+        - label은 각 라디오 박스 옆에 표시되는 텍스트를 레이아웃하고, 마진으로 각 요소 간의 간격을 조정합니다.
+        
+        [동작 설명]
+        - 사용자가 라디오 박스 중 하나를 선택하면, onchange 이벤트가 발생합니다.
+        - 이 이벤트는 handleChange() 함수를 호출하며, 선택된 라디오 박스의 값을 <p> 태그에 표시합니다.
+
+        [실제 동작]
+        - 웹 페이지를 열면, 세 개의 라디오 박스와 "Selected item will be shown here."라는 문구가 표시됩니다.
+        - 라디오 박스 중 하나를 선택하면 (예: Banana), 문구가 "Selected item: banana"로 변경됩니다.
+    -->
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComboBox Example</title>
+    <style>
+        /* CSS 코드 */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        select {
+            font-size: 16px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 콤보 박스 -->
+    <select id="comboBox" onchange="handleChange()">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+    </select>
+    
+    <p id="selectedItem">Selected item will be shown here.</p>
+    
+    <script>
+        // Javascript 코드
+        function handleChange() {
+            var comboBox = document.getElementById('comboBox');
+            var selectedItem = document.getElementById('selectedItem');
+            selectedItem.textContent = 'Selected item: ' + comboBox.value;
+        }
+    </script>
+
+    <!-- 설명 -->
+    <!--
+        [도식화]
+        +-----------------+        +------------------------------------------+
+        | [Apple v]       |   --> | Selected item: [                        |
+        +-----------------+        +------------------------------------------+
+
+        [코드 설명]
+        - HTML <select> 태그는 사용자가 목록에서 옵션을 선택할 수 있게 해줍니다.
+        - <option> 태그는 선택 가능한 옵션을 정의합니다.
+        - CSS를 통해 <select> 태그를 스타일링합니다.
+        - Javascript를 이용하여 콤보 박스에서 선택한 항목을 텍스트로 표시합니다.
+        
+        [CSS 스타일 설명]
+        - body는 화면의 중앙에 내용을 위치시키기 위해 flexbox 레이아웃을 사용합니다.
+        - select는 패딩과 글자 크기를 설정하여 보기 좋게 스타일링합니다.
+        
+        [동작 설명]
+        - 사용자가 <select> 콤보 박스에서 항목을 선택하면, onchange 이벤트가 발생합니다.
+        - 이 이벤트에 연결된 handleChange() 함수가 실행되며, 선택된 항목의 값이 <p> 태그에 표시됩니다.
+
+        [실제 동작]
+        - 웹 페이지를 열면 콤보 박스와 "Selected item will be shown here."라는 문구가 표시됩니다.
+        - 콤보 박스에서 특정 항목 (예: Banana)을 선택하면, 문구가 "Selected item: banana"로 변경됩니다.
+    -->
+</body>
+</html>

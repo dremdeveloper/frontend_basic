@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label Example</title>
+    <style>
+        /* CSS 코드 */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        input {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    
+    <script>
+        // Javascript 코드
+        // 이 예제에서는 Javascript 없이 HTML과 CSS만으로 label의 기능을 보여주고 있습니다.
+    </script>
+
+    <!-- 설명 -->
+    <!--
+        [도식화]
+        +-----------------------------------+
+        |  Username: [______________]       |
+        +-----------------------------------+
+        
+        [코드 설명]
+        - HTML <label> 태그는 <input> 태그와 관련된 설명 텍스트를 제공합니다.
+        - HTML <input> 태그는 사용자로부터 데이터를 입력받습니다.
+        
+        [CSS 스타일 설명]
+        - body는 화면의 중앙에 내용을 위치시키기 위해 flexbox 레이아웃을 사용합니다.
+        - label은 글자 크기를 정하고, 우측으로 마진을 갖습니다.
+        - input은 글자 크기를 정하고 있습니다.
+
+        [라벨 동작 설명]
+        - <label> 태그의 "for" 속성은 관련 <input> 태그의 "id" 속성값과 동일해야 합니다.
+        - 이렇게 연결하면, 라벨을 클릭하면 연결된 입력 필드가 활성화됩니다.
+        - 즉, "Username:" 라벨을 클릭하면 텍스트 입력 필드가 선택(활성화)됩니다.
+
+        [실제 동작]
+        - "Username:" 라벨을 클릭하면 인접한 텍스트 필드(input)가 포커스 됩니다. 이것은 <label>과 <input>이 "for"와 "id" 속성으로 서로 연결되어 있기 때문입니다.
+    -->
+</body>
+</html>

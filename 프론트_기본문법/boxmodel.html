@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Box Model</title>
+    <style>
+        /* CSS 코드 */
+        /* 박스 모델을 시각적으로 이해할 수 있도록 각 섹션에 대해 다른 색상을 사용 */
+        .box {
+            width: 200px;
+            padding: 20px;
+            border: 10px solid green;
+            margin: 15px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML 코드 -->
+    <div class="box">This is a box.</div>
+
+    <!-- 설명 -->
+    <!-- 
+        [도식화]
+        [Box Model의 기본 개념]
+        - CSS의 박스 모델은 요소를 모델링하는 형태로, 마진(margin), 경계(border), 패딩(padding), 그리고 내용(content)이 포함됩니다.
+        
+        |----------------[margin]----------------|
+        |---------------[border]-----------------|
+        |----------------[padding]---------------|
+        |----------------[content]---------------|
+        | This is a box. |
+
+        [코드 설명]
+        - .box 클래스는 width, padding, border, margin, 그리고 background-color 속성을 갖습니다.
+        - width: 박스의 너비를 정의합니다. 여기서는 200px로 설정되어 있습니다.
+        - padding: 내용과 경계 사이의 공간입니다. 여기서는 20px로 설정되어 있습니다.
+        - border: 박스의 경계를 정의합니다. 여기서는 두께가 10px이며, 색상은 초록색입니다.
+        - margin: 박스 외부의 공간을 정의합니다. 여기서는 15px로 설정되어 있습니다.
+        - background-color: 박스의 배경색을 정의합니다. 여기서는 lightblue로 설정되어 있습니다.
+
+        [실제 동작]
+        - .box의 전체 너비는 width(200px) + padding(20px*2, 왼쪽과 오른쪽) + border(10px*2, 왼쪽과 오른쪽) = 260px로 계산됩니다.
+        - .box의 전체 높이는 content의 높이(텍스트 내용에 따라 달라집니다) + padding(위 아래 20px*2) + border(위 아래 10px*2)로 계산됩니다.
+        - 마진은 박스 외부에 추가적인 공간을 제공하며, 여기서는 왼쪽과 오른쪽으로 15px씩 여백이 생깁니다.
+
+        이해를 돕기 위해 각 섹션(패딩, 경계, 마진)에 다른 색상을 사용할 수 있으며, 크롬 개발자 도구를 사용하여 시각적으로 확인할 수도 있습니다.
+    -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Nav</title>
+    <style>
+        /* CSS 코드 */
+        /* 네비게이션 바의 스타일링: 배경 색을 회색으로, 글자 색을 흰색으로, 패딩을 추가 */
+        nav {
+            background-color: grey;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        /* 네비게이션 링크의 스타일링: 텍스트 장식을 없애고, 오른쪽에 마진을 추가 */
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML 코드 -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- 설명 -->
+    <!-- 
+        [도식화]
+        - HTML의 <nav> 태그는 내비게이션 링크를 그룹화할 때 사용됩니다. 일반적으로 웹페이지 상단이나 옆에 위치하여 사용자가 페이지 간에 쉽게 이동할 수 있도록 돕습니다.
+        - 이 예시에서는 상단 네비게이션 바에 "Home", "About Us", "Contact" 세 가지 링크를 제공하고 있습니다.
+
+        |-----------------------------------------------------|
+        | [Home]   [About Us]   [Contact]                     |
+        |-----------------------------------------------------|
+        [] 안의 단어들은 각각 하나의 <a> 태그에 해당하며, 이를 <nav> 태그로 그룹화하였습니다.
+
+        - "Home", "About Us", "Contact": 각각의 링크는 페이지 내 다른 섹션으로 이동하도록 (현재는 '#'로 설정되어 실제 이동이 없습니다) 설정되어 있으며, 스타일링으로 텍스트 장식을 없애고 흰색으로 색상이 지정되어 있습니다.
+
+        <nav> 태그는 웹 페이지의 전반적인 이동을 돕는 역할을 하며, 사용자에게 사이트의 주요 영역으로의 링크를 제공함으로써 사용성을 향상시킵니다.
+    -->
+</body>
+</html>

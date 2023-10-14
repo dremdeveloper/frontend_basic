@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding :before and :after</title>
+    <style>
+        /* CSS 코드 */
+        /* 기본적인 스타일링: 패딩과 폰트 사이즈를 설정 */
+        p {
+            padding: 10px;
+            font-size: 16px;
+        }
+        /* :before에 대한 스타일링 */
+        p:before {
+            content: "[Before] ";
+            color: blue;
+        }
+        /* :after에 대한 스타일링 */
+        p:after {
+            content: " [After]";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML 코드 -->
+    <p>This is a sentence.</p>
+
+    <!-- 설명 -->
+    <!-- 
+        [도식화]
+        [:before와 :after의 기본 개념]
+        - :before는 선택한 요소의 내용이 시작하기 전에 콘텐츠를 삽입합니다.
+        - :after는 선택한 요소의 내용이 끝난 후에 콘텐츠를 삽입합니다.
+        - 이들은 가상요소로, 실제 DOM에 추가되지 않지만, 스타일링을 통해 화면에 표현됩니다.
+
+        [코드 설명]
+        - <p> 태그를 선택하고, 그 앞에 (:before) 파란색의 "[Before]" 텍스트를, 뒤에 (:after) 빨간색의 " [After]" 텍스트를 삽입합니다.
+        - 실제 HTML 요소가 아닌, 스타일링의 일환으로 화면에 표시됩니다.
+
+        [도식화]
+        |----------------------------|
+        | [Before] This is a sentence. [After] |
+        |----------------------------|
+        
+        [실제 HTML 코드 구조]
+        <p>This is a sentence.</p>
+
+        [화면에 표시되는 형태]
+        [Before] This is a sentence. [After]
+
+        [:before와 :after는] 실제 HTML 코드에 존재하지 않지만, CSS 스타일링을 통해 화면에 가상의 콘텐츠를 추가할 수 있습니다. 이를 활용하여, 예를 들어, 목록의 항목 앞에 특정 기호를 넣거나, 텍스트에 추가적인 설명을 붙이는 등의 작업을 할 수 있습니다.
+    -->
+</body>
+</html>

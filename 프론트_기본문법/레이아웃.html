@@ -30,17 +30,22 @@
         }
     }
 
-    .responsive-layout {
+ .responsive-layout {
         width: 100%;
         border: 2px solid green;
         font-size: 16px;
     }
 
-    @media (max-width: 400px) {
+
+    @media (max-width: 500px) {
         .responsive-layout {
-            font-size: 12px;
+            font-size: 12px; /* 폰트 크기를 작게 설정 */
+            background-color: green; /* 배경색을 검정색으로 변경 */
+            border: 3px dotted green; /* 테두리 스타일을 점으로 변경하고 색상을 초록색으로 설정 */
         }
     }
+    }
+</style>
 </style>
 
 </head>
@@ -69,7 +74,7 @@
     3. 적응형 레이아웃 (Adaptive Layout):
        - 특정 브라우저 너비에서 레이아웃의 구조나 스타일이 변경됩니다.
        - 주로 미디어 쿼리를 사용하여 특정 조건에서 스타일을 적용합니다.
-       결과: 브라우저 너비가 600px 이하일 때 노란색 배경의 파란색 테두리 상자가 표시됩니다.
+       결과: 브라우저 너비가 600px 이하일 때 노란색 배경이 표시됩니다.
     -->
 
     <div class="adaptive-layout">적응형 레이아웃 예시</div>
@@ -78,7 +83,7 @@
     4. 반응형 레이아웃 (Responsive Layout):
        - 다양한 디바이스와 브라우저 크기에 따라 내용, 구조 및 표시 방식이 동적으로 변합니다.
        - 유동 레이아웃의 원칙과 미디어 쿼리를 결합하여 구현됩니다.
-       결과: 브라우저 너비가 400px 이하일 때 작은 글씨체의 초록색 테두리 상자가 표시됩니다.
+       결과: 브라우저 너비가 500px 이하일 때 작은 글씨체가 되고 초록색 배경이 나타납니다.됩니다.
     -->
 
     <div class="responsive-layout">반응형 레이아웃 예시</div>

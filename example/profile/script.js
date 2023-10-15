@@ -1,8 +1,5 @@
-function toggleDetails() {
-    var detailsElement = document.getElementById('details');
-    if(detailsElement.style.display === 'none') {
-        detailsElement.style.display = 'block';
-    } else {
-        detailsElement.style.display = 'none';
+    function openLink(url) {
+        if (confirm("아래 링크로 페이지를 이동하시겠습니까?\n" + url)) {
+            window.location.href = url;
+        }
     }
-}

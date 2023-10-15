@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Tag Explanation</title>
+    <!--
+    ol, ul, dl 태그에 대한 기본 이해:
+    
+    1. ol (Ordered List) 태그:
+       - ol 태그는 순서가 있는 목록을 생성합니다.
+       - 이 태그 안에는 li (List Item) 태그를 사용하여 개별 항목을 정의합니다.
+       - 일반적으로 숫자로 항목의 순서를 표시합니다.
+       - 언제 사용해야 하는지: 항목의 순서가 중요할 때 사용합니다 (예: 레시피 단계, 순위 등).
+    
+    2. ul (Unordered List) 태그:
+       - ul 태그는 순서가 없는 목록을 생성합니다.
+       - 이 태그 안에도 li 태그를 사용하여 개별 항목을 정의합니다.
+       - 일반적으로 불릿 포인트로 항목을 표시합니다.
+       - 언제 사용해야 하는지: 항목의 순서가 중요하지 않을 때 사용합니다 (예: 쇼핑 목록, 항목 목록 등).
+       
+    3. dl (Description List) 태그:
+       - dl 태그는 설명 목록을 생성합니다.
+       - dt (Description Term) 태그로 용어를, dd (Description Description) 태그로 정의나 설명을 제공합니다.
+       - 언제 사용해야 하는지: 용어와 그에 대한 정의를 목록으로 제시할 때 사용합니다 (예: 용어집, 메타데이터 목록 등).
+    -->
+</head>
+<body>
+    <h1>List Examples</h1>
+    <!-- ol 태그 사용 예 -->
+    <h2>Ordered List Example</h2>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+    <!-- ul 태그 사용 예 -->
+    <h2>Unordered List Example</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+
+    <!-- dl 태그 사용 예 -->
+    <h2>Description List Example</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language - A markup language for creating web pages.</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets - A style sheet language for controlling the appearance of web pages.</dd>
+    </dl>
+    
+    <style>
+        /* CSS를 사용하여 목록의 스타일을 정의할 수 있습니다. */
+        ol {
+            color: blue;
+        }
+        ul {
+            color: green;
+        }
+        dl dt {
+            font-weight: bold;
+        }
+        dl dd {
+            margin-left: 20px;
+        }
+    </style>
+</body>
+</html>

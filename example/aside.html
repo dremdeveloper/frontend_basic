@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside Tag Example</title>
+    <style>
+        /* 
+        CSS: 
+        - 아래 CSS 코드는 <aside> 태그의 배경색을 연한 파란색으로 설정합니다.
+        - 또한, <main>과 <aside> 태그를 나란히 표시하기 위한 플렉스박스 스타일을 적용합니다.
+        */
+        body {
+            display: flex;
+        }
+        main {
+            flex: 70%; /* main 영역은 가용 공간의 70%를 차지합니다. */
+        }
+        aside {
+            flex: 30%; /* aside 영역은 가용 공간의 30%를 차지합니다. */
+            background-color: lightblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    ASIDE 태그:
+    - <aside> 태그는 페이지의 주 내용과 간접적으로 관련된 콘텐츠를 정의하는 데 사용됩니다.
+    - 예를 들어, 사이드바, 콜아웃 박스, 또는 광고와 같이 주요 콘텐츠와 관련이 있지만,
+      직접적으로는 포함되지 않는 콘텐츠를 <aside> 안에 넣습니다.
+    - <aside>는 주 내용과 함께, 또는 페이지 레이아웃의 다른 부분과 함께 사용될 수 있습니다.
+    -->
+
+    <main>
+        <!-- 
+        MAIN 태그:
+        - <main> 태그는 웹페이지의 핵심 콘텐츠를 감쌉니다.
+        - 각 웹페이지는 하나의 <main> 엘리먼트를 가져야 하며, 사이트 내비게이션과 푸터 등 페이지의
+          주요 콘텐츠 외부에 있어야 합니다.
+        -->
+        <h1>Main Content</h1>
+        <p>This is the main content of the page...</p>
+    </main>
+
+    <aside>
+        <!-- 
+        예시:
+        - 아래 예시에서는 <aside> 태그 내에 연관된 링크를 몇 개 포함했습니다.
+        - 이 링크들은 주요 콘텐츠와 관련이 있지만, 핵심 콘텐츠 자체는 아닙니다.
+        -->
+        <h2>Related Links</h2>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </aside>
+   
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Tag Example</title>
+    <style>
+        /* 
+        CSS: 
+        - 아래 CSS 코드는 <strong> 태그 내의 텍스트 색상을 파란색으로 변경합니다.
+        */
+        strong {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    STRONG 태그:
+    - <strong> 태그는 텍스트를 볼드체로 표현하며, 동시에 이 텍스트가 중요하다는 의미를 가지게 됩니다.
+    - <strong>은 웹 접근성 측면에서 중요합니다. 스크린 리더는 <strong>으로 감싸진 텍스트를 강조하여 읽습니다.
+    - <strong>은 단순한 스타일링보다는 '의미론적 강조'를 목적으로 사용되어야 합니다.
+    - 예를 들어, 경고 메시지나 중요한 알림에서 사용자의 주의를 끌기 위해 <strong> 태그를 사용할 수 있습니다.
+    -->
+
+    <p>This is a text with <strong>strong emphasized text</strong>.</p>
+
+    <!-- 
+    주의: 
+    - <strong> 태그는 단순히 텍스트를 볼드로 만드는 것이 아니라, 중요하거나 긴급한 내용을 표현할 때 사용됩니다.
+    - 만약 볼드 스타일링만 원하며 의미론적 강조가 필요 없다면, <b> 태그나 CSS를 이용하세요.
+    -->
+    <p>This is a text with <b>bold text</b> using the 'b' tag.</p>
+   
+    <!-- 
+    JavaScript와의 상호작용:
+    - 아래의 예제에서 JavaScript를 사용하여 <strong> 태그를 클릭할 때 알림 메시지를 표시합니다.
+    -->
+    <p>Click on this <strong id="strongText">strong emphasized text</strong> to see an alert.</p>
+
+    <script>
+        /*
+        JAVASCRIPT:
+        - JavaScript를 사용하여 <strong> 태그와 상호 작용하는 기본적인 예를 보여줍니다.
+        - 아래의 코드는 'strongText'라는 id를 가진 요소가 클릭되면 alert 창을 띄우는 기능을 수행합니다.
+        */
+        document.getElementById("strongText").addEventListener("click", function() {
+            alert("Strong emphasized text clicked!");
+        });
+    </script>
+
+</body>
+</html>

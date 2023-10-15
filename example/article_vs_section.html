@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article and Section Example</title>
+</head>
+<body>
+
+    <!-- 
+    ARTICLE:
+    - <article> 요소는 독립적이며 완전하게 자체로 이해될 수 있는 콘텐츠를 나타냅니다.
+    - <article>은 주로 블로그 포스트, 포럼 포스트, 뉴스 기사 등과 같이 독립적으로 배포하거나 재사용할 수 있는 콘텐츠를 표현하는 데 사용됩니다.
+    - <article> 요소는 일반적으로 제목을 포함해야 하며, 여기서는 <h1> 요소로 표현하였습니다.
+    - 문서 내에서 독립적으로 존재할 수 있으며, 문서의 나머지 부분과 독립적으로 읽거나 재사용할 수 있습니다.
+    -->
+    <article>
+        <h1>Blog Post Title</h1>
+        <p>This is the content of the blog post.</p>
+    </article>
+
+    <!-- 
+    SECTION:
+    - <section> 요소는 웹 페이지의 일반적인 섹션을 나타내며, 가급적 제목을 포함해야 합니다.
+    - <section>은 문서나 애플리케이션의 일반적인 섹션을 의미하며, 특정 주제의 내용을 그룹화하는 데 사용되고, 주로 제목(<h1>-<h6>)을 포함합니다.
+    - <section>은 <article>과는 달리, 내용이 반드시 독립적으로 이해되거나 재사용될 필요가 없으며, 문서의 구조를 논리적으로 나누는 역할을 합니다.
+    - <section>을 사용하는 주된 이유는 문서의 콘텐츠를 주제별로 그룹화하고, 각 그룹에 제목을 제공하여 구조적인 의미를 부여하는 것입니다.
+    -->
+    <section>
+        <h2>About Us</h2>
+        <p>This section contains information about us.</p>
+    </section>
+
+    <!-- 
+    실제 사용 예시:
+    - 아래의 예시에서는 'Latest News' 섹션에 관련된 여러 기사를 그룹화합니다.
+    - <section> 요소는 여러 개의 <article> 요소를 포함하며, 각 <article>은 독립적인 뉴스 기사를 나타냅니다.
+    - 이 구조는 정보의 계층성과 구조성을 높여 웹 페이지를 이해하기 쉽게 만들어 줍니다.
+    - 전체 뉴스 섹션은 한 개의 주제(최신 뉴스)를 가지므로 <section> 요소를 사용하고, 각각의 뉴스 기사는 독립적인 콘텐츠이므로 <article> 요소를 사용합니다.
+    -->
+    <section>
+        <h2>Latest News</h2>
+
+        <article>
+            <h3>News Item 1</h3>
+            <p>Details about news item 1.</p>
+        </article>
+
+        <article>
+            <h3>News Item 2</h3>
+            <p>Details about news item 2.</p>
+        </article>
+    </section>
+
+</body>
+</html>

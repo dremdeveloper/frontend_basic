@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Tag Explanation</title>
+    <!--
+    a 태그 (Anchor Tag)에 대한 기본적인 이해:
+    
+    - a 태그는 "앵커"를 의미하며, 웹페이지 내의 다른 위치나 다른 웹페이지로 연결되는 하이퍼링크를 생성하는 데 사용됩니다.
+    - a 태그는 "href" 속성을 가지며, 이 속성은 연결하려는 웹페이지의 URL을 값으로 가집니다.
+    - a 태그는 inline-level 요소이므로, 텍스트나 다른 inline-level 요소 내에서 사용됩니다.
+    - a 태그는 사용자에게 추가 정보나 관련된 콘텐츠로 이동하는 경로를 제공할 때 사용되며, 명확하고 이해하기 쉬운 링크 텍스트를 가지는 것이 좋습니다.
+    
+    a 태그의 일반적인 사용 예:
+    1. 다른 웹페이지로의 링크
+    2. 동일 페이지 내의 다른 섹션으로의 이동(점프) 링크
+    3. 메일 주소로의 링크
+    4. 파일 다운로드 링크
+    
+    CSS와 JavaScript와의 연계:
+    - CSS를 사용하여 a 태그의 스타일을 변경하거나, hover, active 등의 상태에 따른 스타일을 정의할 수 있습니다.
+    - JavaScript를 사용하여 a 태그 클릭 시 추가적인 액션(예: 알림, 페이지 이동 방지 등)을 정의할 수 있습니다.
+    -->
+    <style>
+        /* CSS를 사용하여 a 태그의 기본 스타일과 hover 상태의 스타일을 정의합니다. */
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Website!</h1>
+    <p>
+        <!-- a 태그 사용 예시: 다른 웹페이지로의 링크 -->
+        Please visit our <a href="https://example.com/about">About Us</a> page to learn more about our company.
+    </p>
+    <script>
+        // JavaScript를 사용하여 a 태그에 클릭 이벤트 리스너를 추가합니다.
+        document.querySelector('a').addEventListener('click', function(event) {
+            // 사용자에게 추가 확인을 요청하고, 필요하다면 페이지 이동을 방지합니다.
+            if (!confirm("Are you sure you want to visit the 'About Us' page?")) {
+                event.preventDefault(); // 페이지 이동 방지
+            }
+        });
+    </script>
+</body>
+</html>

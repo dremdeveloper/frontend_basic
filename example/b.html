@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B Tag Example</title>
+    <style>
+        /* 
+        CSS: 
+        - 아래 CSS 코드는 <b> 태그 내의 텍스트 색상을 초록색으로 변경합니다.
+        */
+        b {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    B 태그:
+    - <b> 태그는 텍스트를 볼드체로 만들기 위해 사용됩니다.
+    - HTML5의 권장 사항에 따르면, <b> 태그는 "키워드", "제품 이름" 등을 표시할 때 사용해야 합니다.
+    - <b> 태그는 주로 텍스트의 스타일을 변경하기 위한 것으로, 텍스트에 추가적인 의미를 부여하지 않습니다.
+    - 즉, <b> 태그는 단순히 시각적인 변경을 목표로 하며 의미론적인 강조는 나타내지 않습니다.
+    - 만약 텍스트를 의미론적으로 강조하고 싶다면, <strong> 태그를 사용하는 것을 고려해야 합니다.
+    -->
+
+    <p>This is a text with <b>bold text</b>.</p>
+
+    <!-- 
+    주의: 
+    - <b> 태그는 단순히 텍스트의 외관을 변경하기 위해 사용되며, 문장의 의미에 영향을 주지 않습니다.
+    - 의미론적인 강조가 필요한 경우 <strong> 태그를 사용해야 합니다.
+    -->
+    <p>This is a text with <strong>strong text</strong>.</p>
+   
+    <!-- 
+    JavaScript와의 상호작용:
+    - 아래의 예제에서 JavaScript를 사용하여 <b> 태그를 클릭할 때 알림 메시지를 표시합니다.
+    -->
+    <p>Click on this <b id="boldText">bold text</b> to see an alert.</p>
+
+    <script>
+        /*
+        JAVASCRIPT:
+        - JavaScript를 사용하여 <b> 태그와 상호 작용하는 기본적인 예를 보여줍니다.
+        - 아래의 코드는 'boldText'라는 id를 가진 요소가 클릭되면 alert 창을 띄우는 기능을 수행합니다.
+        */
+        document.getElementById("boldText").addEventListener("click", function() {
+            alert("Bold text clicked!");
+        });
+    </script>
+
+</body>
+</html>

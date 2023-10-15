@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Tag Example</title>
+    <style>
+        /* 
+        CSS: 
+        - 아래 CSS 코드는 <i> 태그 내의 텍스트 색상을 파란색으로 변경합니다.
+        */
+        i {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    I 태그:
+    - HTML에서 <i> 태그는 기본적으로 텍스트를 기울임체로 표시하는 데 사용됩니다.
+    - HTML5부터 <i> 태그는 단순히 스타일(이탤릭)을 나타내는 것이 아니라 "다른 일반 텍스트와 구별"되는 텍스트를 나타내는 태그로 정의되었습니다. 
+      예를 들어, 기술 용어, 외국어 구절, 생각 등을 나타낼 때 사용됩니다.
+    - CSS를 사용하여 <i> 태그의 스타일을 변경할 수 있습니다.
+    - <i> 태그만으로는 의미론적인 의미를 가지지 않으며, 디자인 목적으로만 사용되므로 가능하면 CSS를 이용하여 텍스트를 기울이는 것이 좋습니다. 
+    -->
+
+    <p>Here is a normal text and <i>here is an italic text</i>.</p>
+
+    <!-- 
+    주의: 
+    - 텍스트를 단순히 시각적으로 강조하기 위해서는 <em> 태그를 사용하는 것이 더 적절할 수 있습니다.
+    - <i> 태그는 텍스트가 일반적인 문장과 구별되어야 할 때 사용되어야 합니다.
+    -->
+    <p>Here is a normal text and <em>here is an emphasized text</em>.</p>
+
+    <!-- 
+    JavaScript와의 상호작용:
+    - 아래의 예제에서 JavaScript를 사용하여 <i> 태그를 클릭할 때 알림 메시지를 표시합니다.
+    -->
+    <p>Click on this <i id="italicText">italic text</i> to see an alert.</p>
+
+    <script>
+        /*
+        JAVASCRIPT:
+        - JavaScript를 사용하여 <i> 태그와 상호 작용하는 기본적인 예를 보여줍니다.
+        - 아래의 코드는 'italicText'라는 id를 가진 요소가 클릭되면 alert 창을 띄우는 기능을 수행합니다.
+        */
+        document.getElementById("italicText").addEventListener("click", function() {
+            alert("Italic text clicked!");
+        });
+    </script>
+
+</body>
+</html>

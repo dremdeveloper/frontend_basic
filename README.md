@@ -6,6 +6,7 @@
 | Title    | Description                                    |
 | ---------- | ---------------------------------------------- |
 |Community        |http://cafe.naver.com/codingstudyplace          |
+|강의신청 및 강사이력 | https://comento.kr/edu/learn/ITSW/%EC%9B%B9%EA%B0%9C%EB%B0%9C-G2446|
 
 
 # 폴더 구조

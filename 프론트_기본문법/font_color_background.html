@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color, Font, Background Example</title>
+    <style>
+        /* 
+            color 예시
+            - 텍스트의 색상을 지정하는 속성입니다.
+        */
+        .color-1 { color: red; }
+        .color-2 { color: #000; }
+        .color-3 { color: rgba(0, 0, 150, 1); }
+        .color-4 { color: rgba(20, 10, 40, 0.1); }
+
+        /* 
+            font 예시
+            - 텍스트의 스타일과 관련된 속성을 설정합니다.
+        */
+        .font-example {
+            font-style: italic;             /* 글꼴 스타일 지정 (기울임) */
+            font-weight: bold;              /* 글자 두께 */
+            font-size: 20px;                /* 글자 크기 */
+            font-family: "Arial", sans-serif; /* 글꼴 지정 */
+            line-height: 1.5;              /* 줄 간격 */
+            text-align: center;             /* 텍스트 정렬 방향 */
+        }
+
+        /* 
+            background 예시
+            - 요소의 배경을 지정하는 속성들입니다.
+        */
+        .background-example {
+            background-color: #f3f3f3;          /* 배경색 지정 */
+            background-image: url("https://via.placeholder.com/150"); /* 배경 이미지 지정 (예시로 placeholder 이미지 사용) */
+            background-repeat: no-repeat;      /* 배경 이미지 반복 여부 */
+            background-position: center center; /* 배경 이미지 위치 */
+            height: 150px;
+            width: 150px;
+        }
+
+        /* 
+            background 속성을 한번에 설정
+            - 순서: color, image, repeat, position
+        */
+        .background-shortcut {
+            background: #ffe4e1 url("https://via.placeholder.com/100") no-repeat center center;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Color Examples</h3>
+    <p class="color-1">This is red text.</p>
+    <p class="color-2">This is black text.</p>
+    <p class="color-3">This is a blue-ish text.</p>
+    <p class="color-4">This is a very light colored text due to low opacity.</p>
+
+    <h3>Font Examples</h3>
+    <p class="font-example">This text shows different font properties.</p>
+
+    <h3>Background Examples</h3>
+    <div class="background-example"></div>
+    <br>
+    <div class="background-shortcut"></div>
+
+    <!-- 출처 정보 -->
+    <footer>
+        <p>출처: [CSS] 많이 쓰이는 CSS 속성 (코딩 스터디 공간) | 작성자 jay</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width, Height, Margin, Padding Example</title>
+    <style>
+        /* 기본 박스 스타일 */
+        .box {
+            width: 100px;  /* 가로 길이 */
+            height: 100px; /* 세로 길이 */
+            background-color: #f3f3f3;
+            border: 2px solid black;
+        }
+
+        /* 
+            margin 예시
+            - 외부 여백: 해당 요소와 주변 요소 사이의 간격
+        */
+        .margin-1 { margin: 10px; }  /* 상하좌우 모두 10px */
+        .margin-2 { margin: 10px 20px; }  /* 상하 10px, 좌우 20px */
+        .margin-3 { margin: 10px 20px 10px 30px; }  /* 상10px, 우20px, 하10px, 좌30px */
+        .margin-4 { margin: 10px 20px 30px; }  /* 상10px, 좌우20px, 하30px */
+
+        /* 
+            padding 예시
+            - 내부 여백: 요소의 내용과 테두리 사이의 간격
+        */
+        .padding-1 { padding: 10px; }  /* 상하좌우 모두 10px */
+        .padding-2 { padding: 10px 20px; }  /* 상하 10px, 좌우 20px */
+        .padding-3 { padding: 10px 20px 10px 30px; }  /* 상10px, 우20px, 하10px, 좌30px */
+        .padding-4 { padding: 10px 20px 30px; }  /* 상10px, 좌우20px, 하30px */
+
+    </style>
+</head>
+<body>
+    <h3>Margin Examples</h3>
+    <div class="box margin-1">Margin 10px</div>
+    <div class="box margin-2">Margin 10px 20px</div>
+    <div class="box margin-3">Margin 10px 20px 10px 30px</div>
+    <div class="box margin-4">Margin 10px 20px 30px</div>
+
+    <h3>Padding Examples</h3>
+    <div class="box padding-1">Padding 10px</div>
+    <div class="box padding-2">Padding 10px 20px</div>
+    <div class="box padding-3">Padding 10px 20px 10px 30px</div>
+    <div class="box padding-4">Padding 10px 20px 30px</div>
+
+    <!-- 출처 정보 -->
+    <footer>
+        <p>출처: [CSS] 많이 쓰이는 CSS 속성 (코딩 스터디 공간) | 작성자 jay</p>
+    </footer>
+</body>
+</html>

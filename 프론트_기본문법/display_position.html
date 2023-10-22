@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display & Position Example</title>
+    <style>
+        /* 
+            display 예시
+            - 요소의 표시 방식을 결정하는 속성입니다.
+        */
+        .display-none { display: none; } /* 화면에 표시되지 않습니다. */
+        .display-block { display: block; background-color: lightblue; margin: 10px; } /* 블록 요소입니다. */
+        .display-inline { display: inline; background-color: lightgreen; margin: 10px; } /* 인라인 요소입니다. */
+        .display-inline-block { display: inline-block; background-color: lightpink; margin: 10px; width: 100px; height: 50px; } /* 인라인 블록 요소입니다. */
+
+        /* 
+            position 예시
+            - 요소의 위치를 결정하는 속성입니다.
+        */
+        .position-static { position: static; }
+        .position-relative { position: relative; left: 20px; top: 20px; background-color: peachpuff; }
+        .position-absolute { position: absolute; top: 100px; right: 50px; background-color: palevioletred; }
+        .position-fixed { position: fixed; bottom: 10px; left: 10px; background-color: paleturquoise; }
+        .position-inherit { position: inherit; }
+        .parent { position: relative; height: 200px; background-color: lightgray; }
+    </style>
+</head>
+<body>
+    <h3>Display Examples</h3>
+    <div class="display-none">This will not be visible on the page.</div>
+    <div class="display-block">Block element</div>
+    <span class="display-inline">Inline element 1</span>
+    <span class="display-inline">Inline element 2</span>
+    <div class="display-inline-block">Inline-Block element</div>
+
+    <h3>Position Examples</h3>
+    <div class="position-static">Static position (default)</div>
+    <div class="position-relative">Relative position (shifted right and down)</div>
+    <div class="parent">
+        <div class="position-absolute">Absolute position (inside a parent with relative position)</div>
+    </div>
+    <div class="position-fixed">Fixed position (bottom left corner)</div>
+
+    <!-- 출처 정보 -->
+    <footer>
+        <p>출처: [CSS] 많이 쓰이는 CSS 속성 (코딩 스터디 공간) | 작성자 jay</p>
+    </footer>
+</body>
+</html>

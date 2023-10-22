@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor, Float & Clear Example</title>
+    <style>
+        /* 
+            cursor 예시
+            - 마우스 커서의 모양을 결정하는 속성입니다.
+        */
+        .cursor-auto { cursor: auto; } /* 기본 커서 */
+        .cursor-default { cursor: default; } /* 화살표 모양의 커서 */
+        .cursor-pointer { cursor: pointer; } /* 손가락 모양의 커서 */
+        .cursor-wait { cursor: wait; } /* 대기 모양의 커서 */
+
+        /* 
+            float 예시
+            - 요소가 페이지에 어떻게 부유할지 결정하는 속성입니다.
+        */
+        .float-left { float: left; background-color: lightblue; margin: 10px; }
+        .float-right { float: right; background-color: lightgreen; margin: 10px; }
+        .float-none { float: none; background-color: lightpink; margin: 10px; }
+
+        /* 
+            clear 예시
+            - 부유된 요소 뒤에 새로운 요소가 어떻게 위치할지 결정하는 속성입니다.
+        */
+        .clear-left { clear: left; background-color: peachpuff; margin: 10px; }
+        .clear-right { clear: right; background-color: palevioletred; margin: 10px; }
+        .clear-both { clear: both; background-color: paleturquoise; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h3>Cursor Examples</h3>
+    <div class="cursor-auto">Cursor Auto</div>
+    <div class="cursor-default">Cursor Default</div>
+    <button class="cursor-pointer">Cursor Pointer</button>
+    <div class="cursor-wait">Cursor Wait</div>
+
+    <h3>Float Examples</h3>
+    <div class="float-left">Float Left</div>
+    <div class="float-right">Float Right</div>
+    <div class="float-none">Float None (Normal flow)</div>
+
+    <h3>Clear Examples</h3>
+    <div class="clear-left">Clear Left (Will be placed below any left floated elements)</div>
+    <div class="clear-right">Clear Right (Will be placed below any right floated elements)</div>
+    <div class="clear-both">Clear Both (Will be placed below any floated elements)</div>
+
+    <!-- 출처 정보 -->
+    <footer>
+        <p>출처: [CSS] 많이 쓰이는 CSS 속성 (코딩 스터디 공간) | 작성자 jay</p>
+    </footer>
+</body>
+</html>

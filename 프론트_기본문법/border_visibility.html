@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border & Visibility Example</title>
+    <style>
+        /* 
+            border 예시
+            - 요소의 테두리를 지정하는 속성들입니다.
+        */
+        .border-width { border-width: 5px; border-style: solid; }
+        .border-style-solid { border: 2px solid black; }
+        .border-style-dotted { border: 2px dotted black; }
+        .border-style-dashed { border: 2px dashed black; }
+        .border-color { border: 2px solid red; }
+        .border-radius { border: 2px solid blue; border-radius: 10px; }
+        .border-all-in-one { border: 3px dashed green; border-radius: 50%; width: 50px; height: 50px; }
+
+        /* 
+            visibility 예시
+            - 요소의 가시성을 결정하는 속성입니다.
+        */
+        .visibility-visible { visibility: visible; border: 2px solid purple; }
+        .visibility-hidden { visibility: hidden; border: 2px solid purple; }
+        .visibility-inherit { visibility: inherit; border: 2px solid orange; }
+        .parent { visibility: hidden; }
+    </style>
+</head>
+<body>
+    <h3>Border Examples</h3>
+    <div class="border-width">Border Width of 5px</div>
+    <div class="border-style-solid">Solid Border</div>
+    <div class="border-style-dotted">Dotted Border</div>
+    <div class="border-style-dashed">Dashed Border</div>
+    <div class="border-color">Red Color Border</div>
+    <div class="border-radius">Rounded Border</div>
+    <div class="border-all-in-one"></div>
+
+    <h3>Visibility Examples</h3>
+    <div class="visibility-visible">Visible</div>
+    <div class="visibility-hidden">Hidden (but still occupies space)</div>
+    <div class="parent">
+        <div class="visibility-inherit">This text inherits 'hidden' visibility from its parent.</div>
+    </div>
+
+    <!-- 출처 정보 -->
+    <footer>
+        <p>출처: [CSS] 많이 쓰이는 CSS 속성 (코딩 스터디 공간) | 작성자 jay</p>
+    </footer>
+</body>
+</html>

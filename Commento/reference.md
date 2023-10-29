@@ -1,9 +1,11 @@
 
 # 멘토와 직접 소통하기
 
+질문은 멘토 카페에 해주시고, 질문하실때 좋은 질문하는 법을 한번 참조하시면 좋을것 같습니다.
+
 | Title    | Link                                   |
 | ---------- | ---------------------------------------------- |
-|멘토 카페        |http://cafe.naver.com/codingstudyplace          |
+|카페        |http://cafe.naver.com/codingstudyplace          |
 |좋은 질문하는 법| https://github.com/dremdeveloper/frontend_basic/blob/main/Commento/question_guide.md |
 
 

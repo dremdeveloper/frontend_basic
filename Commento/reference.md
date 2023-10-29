@@ -7,7 +7,7 @@
 |멘토 카페        |http://cafe.naver.com/codingstudyplace          |
 
 
-# 프론트엔드 Begineer 분들은 위한 링크
+# 프론트엔드 Begineer 분들은 위한 자료
 | Title    | Description                                    |
 | ---------- | ---------------------------------------------- |
 |각 분야별 로드맵          |https://roadmap.sh/   |
